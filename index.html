@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=qww, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>cara y sello</title>
+</head>
+<body>
+    <h1 class="text-center">bienvenido al juego de cara y sello</h1>
+    <div class="border border-dark bg-lingth  p-5 mt-5 ml-5 mr-2" id="texto">
+    
+        <div>
+        <p>•digite su apostar</p>
+        <input type="text" id="apuesta">
+    </div>
+    <div>
+        <p>• selecciona tu opcion</p>
+        <select name="opciones" id="opciones">
+            <option id="lad" value="1">Cara</option>
+            <option id="lad" value="0">Sello</option>
+        </select>
+    </div>
+
+<div class="buttons">
+    <button id="flip-button">
+        girar moneda
+    </button>
+</div>
+<div class="buttons">
+    <button id="reinicio-button">
+        <a href="index.html">Terminar Partida</a>
+    </button>
+</div>
+<div class="stats">
+    <p id="cant-count">Partidas jugadas: 0</p>
+    <p id="dinero-count">Cantidad de dinero: 0</p>
+    <p id="cant-cara">caras: 0</p>
+    <p id="cant-sello">sello: 0</p>
+</div>
+</div>
+<div class="moneda" id="moneda">
+    <div class="cara">
+        <img src="./img/cara.jpg">
+    </div>
+    <div class="sello">
+        <img src="./img/sello.png">
+    </div>
+</div>
+
+
+    <script src="js/juego.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>

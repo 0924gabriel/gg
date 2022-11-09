@@ -1,0 +1,48 @@
+@keyframes spin-sello {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotateX(1980deg);
+    }
+}
+
+@keyframes spin-cara {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotateX(2160deg);
+    }
+
+}
+body{
+    text-align: center;
+}
+.moneda {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    margin: 32px auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.moneda img {
+    width: 145px;
+}
+
+.cara,
+.sello {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.sello {
+    transform: rotateX(180deg);
+}
